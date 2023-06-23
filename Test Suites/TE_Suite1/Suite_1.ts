@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>TestSuite1</name>
+   <name>Suite_1</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,26 +10,19 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>f258dd0d-1160-48ec-9c43-1a2086748246</testSuiteGuid>
+   <testSuiteGuid>8ce0ca40-d6bf-48cb-b08b-b555bd340841</testSuiteGuid>
    <testCaseLink>
-      <guid>415ba60d-0203-4daa-9e90-5f9c67d13d4c</guid>
+      <guid>fbc843f1-b4ed-43a3-851f-63bd18d649ca</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/ListUserTest</testCaseId>
+      <testCaseId>Test Cases/USERS/APIChaningJSON</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>81f70e96-a161-499c-b29d-a4fda298ac9f</guid>
+      <guid>12ab36c4-8413-40f5-a56a-0e8829a540c0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/TAKS3</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>c42d9102-a4ca-48c4-880f-7fd28cc6d947</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/User/TestHTTPMetods</testCaseId>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/USERS/APIChaningJSON2</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

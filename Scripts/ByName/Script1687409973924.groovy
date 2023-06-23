@@ -17,11 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WS.sendRequestAndVerify(findTestObject('UserRestService/ListUsers'))
+WS.sendRequest(findTestObject('CountryInfoService/GetCountryListByNames'))
 
-WS.sendRequestAndVerify(findTestObject('UserRestService/CreatUsers'))
-
-WS.sendRequestAndVerify(findTestObject('UserRestService/UpdateUsers'))
-
-WS.sendRequestAndVerify(findTestObject('UserRestService/DeleteUsers'))
+WS.sendRequestAndVerify(findTestObject('CountryInfoService/GetCountryListByNames'))
 

@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>ListUsers</name>
+   <name>GetCountryListByNames</name>
    <tag></tag>
-   <elementGuidId>0e707b69-012d-4aa9-b4bf-cfea7d0679f9</elementGuidId>
+   <elementGuidId>e7096970-c56e-4748-8bfe-b440d6b63314</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <autoUpdateContent>true</autoUpdateContent>
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;&quot;,
-  &quot;contentType&quot;: &quot;text/plain&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
-      <value>text/plain</value>
-      <webElementGuid>14cba1bd-68a4-43ed-8686-2d6fcd99d5fe</webElementGuid>
+      <value>text/xml; charset=utf-8</value>
+      <webElementGuid>16c17509-20f5-4044-bc50-aab777b6d2a1</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.6.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
-   <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://reqres.in/api/users?page=2</restUrl>
-   <serviceType>RESTful</serviceType>
-   <soapBody></soapBody>
+   <restRequestMethod></restRequestMethod>
+   <restUrl></restUrl>
+   <serviceType>SOAP</serviceType>
+   <soapBody>&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:web=&quot;http://www.oorsprong.org/websamples.countryinfo&quot;>
+   &lt;soapenv:Header/>
+   &lt;soapenv:Body>
+      &lt;web:ListOfCountryNamesByName/>
+   &lt;/soapenv:Body>
+&lt;/soapenv:Envelope></soapBody>
    <soapHeader></soapHeader>
-   <soapRequestMethod></soapRequestMethod>
-   <soapServiceEndpoint></soapServiceEndpoint>
-   <soapServiceFunction></soapServiceFunction>
+   <soapRequestMethod>SOAP</soapRequestMethod>
+   <soapServiceEndpoint>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</soapServiceEndpoint>
+   <soapServiceFunction>ListOfCountryNamesByName</soapServiceFunction>
    <socketTimeout>0</socketTimeout>
-   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <useServiceInfoFromWsdl>false</useServiceInfoFromWsdl>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -56,7 +56,6 @@ WS.verifyResponseStatusCode(response, 200)
 
 assertThat(response.getStatusCode()).isEqualTo(200)
 
-
-WS.verifyElementPropertyValue(response, 'data[1].first_name', 'Lindsay')</verificationScript>
-   <wsdlAddress></wsdlAddress>
+WS.verifyElementText(response, 'ListOfCountryNamesByNameResponse.ListOfCountryNamesByNameResult.tCountryCodeAndName[0].sISOCode', 'AX')</verificationScript>
+   <wsdlAddress>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL</wsdlAddress>
 </WebServiceRequestEntity>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>TestSuite1</name>
+   <name>Test_1</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,26 +10,19 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>f258dd0d-1160-48ec-9c43-1a2086748246</testSuiteGuid>
+   <testSuiteGuid>88aca3ee-8413-49e9-a792-5575720ac2f6</testSuiteGuid>
    <testCaseLink>
-      <guid>415ba60d-0203-4daa-9e90-5f9c67d13d4c</guid>
+      <guid>f096cea3-75d4-4690-8de2-ac22f8bb4636</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/ListUserTest</testCaseId>
+      <testCaseId>Test Cases/ByName</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>81f70e96-a161-499c-b29d-a4fda298ac9f</guid>
+      <guid>7aa7a6db-9e73-4acb-87ab-554b95aeea3a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/TAKS3</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>c42d9102-a4ca-48c4-880f-7fd28cc6d947</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/User/TestHTTPMetods</testCaseId>
+      <testCaseId>Test Cases/ByName2</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

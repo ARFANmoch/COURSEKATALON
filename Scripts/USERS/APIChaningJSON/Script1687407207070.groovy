@@ -17,7 +17,18 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WS.sendRequest(findTestObject('Addtion'))
+response = WS.sendRequest(findTestObject('UserRestService/ListUsers'))
 
-response = WS.sendRequestAndVerify(findTestObject('Addtion'))
+def slurper = new groovy.json.JsonSlurper()
+def result = slurper.parseText(response.getResponseBodyContent())
+
+def value = result.data[1].first_name
+
+println("...Value extracted is : "+value)
+
+GlobalVariable.UserName = value
+
+println("...Global Variable now is :"+GlobalVariable.UserName)
+
+WS.sendRequestAndVerify(findTestObject('Object Repository/SampleRestAPI/UpdateUser'))
 

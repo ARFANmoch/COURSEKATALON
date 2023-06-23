@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DataDriven</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>33db042b-757a-4f7a-9d08-33d34f368f05</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a9cfeb7a-4cf0-4ec6-baf4-6904d3877efb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a1f2fca5-fb0a-47dd-b701-e59e0c3866e0</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8fd99920-e87d-42b4-9c58-91e98e90a90d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'ID'</defaultValue>
+      <description></description>
+      <id>a9cfeb7a-4cf0-4ec6-baf4-6904d3877efb</id>
+      <masked>false</masked>
+      <name>countryCode</name>
+   </variable>
+   <variable>
+      <defaultValue>'Jakarta'</defaultValue>
+      <description></description>
+      <id>a1f2fca5-fb0a-47dd-b701-e59e0c3866e0</id>
+      <masked>false</masked>
+      <name>capital</name>
+   </variable>
+   <variable>
+      <defaultValue>'Rupiahs'</defaultValue>
+      <description></description>
+      <id>8fd99920-e87d-42b4-9c58-91e98e90a90d</id>
+      <masked>false</masked>
+      <name>currency</name>
+   </variable>
+</TestCaseEntity>

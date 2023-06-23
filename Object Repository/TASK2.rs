@@ -1,40 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>CreatUsers</name>
+   <name>TASK2</name>
    <tag></tag>
-   <elementGuidId>a707f9db-9a23-49c7-9d85-eb01a38c7465</elementGuidId>
+   <elementGuidId>45162ca2-2a02-41a9-86cc-94c82c49700e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <autoUpdateContent>false</autoUpdateContent>
+   <autoUpdateContent>true</autoUpdateContent>
    <connectionTimeout>0</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n    \&quot;name\&quot;: \&quot;morpheus\&quot;,\n    \&quot;job\&quot;: \&quot;leader\&quot;\n}&quot;,
-  &quot;contentType&quot;: &quot;text/plain&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <httpHeaderProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
-      <value>text/plain</value>
-      <webElementGuid>7c65fc50-172b-4ed6-8052-5eb68c1614f1</webElementGuid>
+      <value>text/xml; charset=utf-8</value>
+      <webElementGuid>6de5ae6d-5c28-46b8-a21e-0a83fe1d99a3</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.6.0</katalonVersion>
    <maxResponseSize>0</maxResponseSize>
-   <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://reqres.in/api/users</restUrl>
-   <serviceType>RESTful</serviceType>
-   <soapBody></soapBody>
+   <restRequestMethod></restRequestMethod>
+   <restUrl></restUrl>
+   <serviceType>SOAP</serviceType>
+   <soapBody>&lt;Envelope xmlns=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;>
+    &lt;Body>
+        &lt;getBank xmlns=&quot;http://thomas-bayer.com/blz/&quot;>
+            &lt;blz>50230000&lt;/blz>
+        &lt;/getBank>
+    &lt;/Body>
+&lt;/Envelope></soapBody>
    <soapHeader></soapHeader>
-   <soapRequestMethod></soapRequestMethod>
-   <soapServiceEndpoint></soapServiceEndpoint>
-   <soapServiceFunction></soapServiceFunction>
+   <soapRequestMethod>POST</soapRequestMethod>
+   <soapServiceEndpoint>http://www.thomas-bayer.com/axis2/services/BLZService</soapServiceEndpoint>
+   <soapServiceFunction>getBank</soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <verificationScript>import static org.assertj.core.api.Assertions.*
@@ -49,11 +50,6 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-
-
-WS.verifyResponseStatusCode(response, 201)
-
-assertThat(response.getStatusCode()).isEqualTo(201)</verificationScript>
-   <wsdlAddress></wsdlAddress>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
+   <wsdlAddress>http://www.thomas-bayer.com/axis2/services/BLZService?wsdl</wsdlAddress>
 </WebServiceRequestEntity>

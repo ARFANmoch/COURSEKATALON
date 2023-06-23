@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TE_Driven</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>015259ee-0e2e-4b69-83b1-f1956fbacb8b</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d6bd4b29-b995-4c7a-bbb7-52fbcad9bf79</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'APANG'</defaultValue>
+      <description></description>
+      <id>d6bd4b29-b995-4c7a-bbb7-52fbcad9bf79</id>
+      <masked>false</masked>
+      <name>Username</name>
+   </variable>
+</TestCaseEntity>
